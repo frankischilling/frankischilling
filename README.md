@@ -1,6 +1,8 @@
 ### Hello World!
 
-I am a IT student and a Linux enjoyer! I also like to mess around with programming too. Please check out Cupidfetch if you are interested in C Linux programming.
+I am a IT student and a Linux enjoyer! 
+I also like to mess around with programming too. 
+Please check out Cupidfetch if you are interested in C Linux programming.
 
 <!--
 **frankischilling/frankischilling** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
