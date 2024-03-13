@@ -12,7 +12,8 @@ I'm learning:
 * Some light web-dev (PHP, MySQL, using XAMPP)
 
 I'm interested in:
-* Arch GNU/Linux, FOSS, and more!
+* Arch GNU/Linux
+* FOSS, and more!
 
 <!--
 **frankischilling/frankischilling** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
