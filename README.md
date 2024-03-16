@@ -1,6 +1,6 @@
 ### Hello World!
 
-I am an IT student and a Linux enjoyer! 
+I am an IT student, technician, and a Linux enjoyer! 
 
 I also like to mess around with programming too. 
 
