@@ -1,0 +1,38 @@
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        /* Your CSS styles */
+        .container {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 300px;
+          background-color: #222222;
+          color: #bbbbbb;
+          font-family: "undefined medium", monospace;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      </style>
+
+      <!-- Your content -->
+      <div class="container">
+        <h1>Hi there, my name is Nikola 👋</h1>
+        <p>I'm an IT student, technician, and a Linux enthusiast. I enjoy programming and working with Unix/Linux systems.</p>
+        <p>I'm currently learning C, Java, and Rust, along with Unix/Linux administration and web development with PHP, MySQL, and XAMPP.</p>
+        <p>Some of my interests include Arch Linux, FOSS, and exploring new technologies.</p>
+        <!-- You can add more content here -->
+      </div>
+    </div>
+  </foreignObject>
+</svg>
