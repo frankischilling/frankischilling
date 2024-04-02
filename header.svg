@@ -5,7 +5,7 @@
         /* Your CSS styles */
         @font-face {
             font-family: "undefined medium";
-            src: URL("fonts/undefined-medium.ttf");
+            src: url("/fonts/undefined-medium.ttf");
         }
         .container {
           display: flex;
