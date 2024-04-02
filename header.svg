@@ -5,7 +5,7 @@
         /* Your CSS styles */
         @font-face {
           font-family: "undefined medium";
-          src: url("https://frankhagan.online/fonts/undefined-medium.ttf") format("truetype");
+          src: url("data:font/truetype;base64,[base64-encoded-font-data]") format("truetype");
         }
         
         .container {
