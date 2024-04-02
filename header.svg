@@ -3,6 +3,11 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
       <style>
         /* Your CSS styles */
+        @font-face {
+          font-family: "undefined medium";
+          src: url("https://frankhagan.online/fonts/undefined-medium.ttf") format("truetype");
+        }
+        
         .container {
           display: flex;
           flex-direction: column;
