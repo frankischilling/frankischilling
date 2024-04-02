@@ -7,7 +7,7 @@
           display: flex;
           flex-direction: column;
           width: 100%;
-          height: 300px;
+          padding: 10px;
           background-color: #222222;
           color: #bbbbbb;
           font-family: "undefined medium", monospace;
@@ -27,7 +27,7 @@
 
       <!-- Your content -->
       <div class="container">
-        <h1>Hi there, my name is Nikola 👋</h1>
+        <h1>Hi there, my name is Frank 👋</h1>
         <p>I'm an IT student, technician, and a Linux enthusiast. I enjoy programming and working with Unix/Linux systems.</p>
         <p>I'm currently learning C, Java, and Rust, along with Unix/Linux administration and web development with PHP, MySQL, and XAMPP.</p>
         <p>Some of my interests include Arch Linux, FOSS, and exploring new technologies.</p>
