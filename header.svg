@@ -4,10 +4,9 @@
       <style>
         /* Your CSS styles */
         @font-face {
-          font-family: "undefined medium";
-          src: url("data:font/truetype;base64,[base64-encoded-font-data]") format("truetype");
+            font-family: "undefined medium";
+            src: URL("fonts/undefined-medium.ttf");
         }
-        
         .container {
           display: flex;
           flex-direction: column;
