@@ -4,8 +4,8 @@
       <style>
         /* Your CSS styles */
         @font-face {
-            font-family: "undefined medium";
-            src: url("/fonts/undefined-medium.ttf");
+            font-family: "undefined medium"; /* Adjusted to match your provided font name */
+            src: url("https://frankhagan.online/fonts/undefined-medium.ttf"); /* Updated URL */
         }
         .container {
           display: flex;
