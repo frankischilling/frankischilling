@@ -1,3 +1,7 @@
+<div>
+  <img src="header.svg" alt="Click to see the source">
+</div>
+<!--
 ### Hello World!
 
 I am an IT student, technician, and a Linux enjoyer! 
@@ -15,7 +19,6 @@ I'm interested in:
 * Arch GNU/Linux
 * FOSS, and more!
 
-<!--
 **frankischilling/frankischilling** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
