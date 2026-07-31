@@ -80,7 +80,7 @@
 
     <rect x="0" y="-24" rx="14" width="240" height="48" fill="#fca5a5"/>
 
-    <text x="120" y="0" text-anchor="middle" dominant-baseline="middle" class="chip">PHP 8.3 + MySQL</text>
+    <text x="120" y="0" text-anchor="middle" dominant-baseline="middle" class="chip">PHP + MySQL</text>
 
   </g>
 
