@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" fill="none" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" fill="none" role="img" aria-labelledby="title desc" focusable="false" xml:lang="en">
   <title id="title">frankischilling — IT, GNU/Linux, emulators and code</title>
-  <desc id="desc">GitHub profile banner for frankischilling. IT at Wentworth. GNU/Linux, emulators, PHP, Python, C and C++. Arch Linux; Lua and XUI; C/C++ with VS2008 and XDK; PHP and MySQL. A dark graphite layout with lime accents and an isometric circuit board.</desc>
+  <desc id="desc">GitHub profile banner for frankischilling. IT @ Wentworth. GNU/Linux, emulators, PHP, Python, C and C++. Arch Linux; Lua + XUI; C/C++ (VS2008/XDK); PHP + MySQL. Graphite and lime artwork, with an isometric circuit board in the wide layout.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1600" y2="500" gradientUnits="userSpaceOnUse">
       <stop stop-color="#121a19"/>
@@ -34,18 +34,36 @@
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M40 0H0V40" fill="none" stroke="#a0c5ad" stroke-opacity=".035" stroke-width="1"/>
     </pattern>
-    <clipPath id="bounds"><rect x="1" y="1" width="1598" height="498" rx="24"/></clipPath>
+    <clipPath id="bounds">
+      <rect x="1" y="1" width="1598" height="498" rx="24"/>
+    </clipPath>
     <style>
       .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
       .mono, .micro { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
       .micro { font-size: 14px; letter-spacing: 1.5px; }
-      /* Static by default; motion is opt-in via the system preference. */
-      @media (prefers-reduced-motion: no-preference) {
-        .signal { animation: signal-flow 8s linear infinite; }
-        .cursor { animation: cursor-blink 1.4s steps(1, end) infinite; }
+      .compact-layout { display: none; }
+
+      /* Embedded image viewport: keep the original profile details legible on phones. */
+      @media (max-width: 720px) {
+        .wide-layout { display: none; }
+        .compact-layout { display: inline; }
       }
-      @keyframes signal-flow { to { stroke-dashoffset: -122; } }
-      @keyframes cursor-blink { 0%, 55% { opacity: 1; } 56%, 100% { opacity: 0; } }
+
+      /* Static by default. Optional intro motion stops within 4.2 seconds. */
+      @media (prefers-reduced-motion: no-preference) {
+        .signal { animation: signal-flow 4s linear 1; }
+        .cursor { animation: cursor-blink 1.4s steps(1, end) 3; }
+      }
+
+      @keyframes signal-flow {
+        to { stroke-dashoffset: -122; }
+      }
+
+      @keyframes cursor-blink {
+        0%, 55% { opacity: 1; }
+        56%, 100% { opacity: 0; }
+      }
+
       @media (prefers-reduced-motion: reduce) {
         .signal, .cursor { animation: none; }
       }
@@ -58,170 +76,246 @@
     <rect width="1600" height="500" fill="url(#ambient)"/>
     <rect width="1600" height="500" fill="url(#grid)"/>
     <path d="M36 1H1564" stroke="url(#edge)" stroke-width="2"/>
-    <path d="M40 77H1560" stroke="#a6c9b5" stroke-opacity=".12"/>
 
-    <!-- Window header / identity -->
-    <g class="mono" font-size="18">
-      <path d="m66 31 10 9-10 9m17 0h12" stroke="#d3f991" stroke-width="2.5" stroke-linecap="square"/>
-      <text x="116" y="47" fill="#b4c1b9">~/frankischilling<tspan fill="#61736d"> / README</tspan></text>
-      <text x="1532" y="47" text-anchor="end" fill="#99ad9f" font-size="15" letter-spacing="2">A PERSONAL WORKSPACE</text>
+    <g class="wide-layout">
+      <path d="M40 77H1560" stroke="#a6c9b5" stroke-opacity=".12"/>
+
+      <!-- Window header / identity -->
+      <g class="mono" font-size="18">
+        <path d="m66 31 10 9-10 9m17 0h12" stroke="#d3f991" stroke-width="2.5" stroke-linecap="square"/>
+        <text x="116" y="47" fill="#b4c1b9">~/frankischilling<tspan fill="#91a99d"> / README</tspan></text>
+        <text x="1532" y="47" text-anchor="end" fill="#99ad9f" font-size="15" letter-spacing="2">A PERSONAL WORKSPACE</text>
+      </g>
+
+      <!-- Editable profile text -->
+      <path d="M68 112h23" stroke="#d3f991" stroke-width="3"/>
+      <text x="104" y="118" class="mono" font-size="19" letter-spacing="2" fill="#c2cfbf">IT @ WENTWORTH</text>
+      <text x="62" y="238" class="sans" font-size="136" textLength="867" lengthAdjust="spacingAndGlyphs" font-weight="700" letter-spacing="-5.8" fill="#f0f3e9">frankischilling<tspan fill="#d3f991">.</tspan></text>
+      <text x="68" y="304" class="sans" font-size="28" fill="#aabbb3">GNU/Linux<tspan fill="#91a99d">   /   </tspan>Emulators<tspan fill="#91a99d">   /   </tspan>PHP / Python / C / C++</text>
+
+      <!-- Capability tags: original content retained. -->
+      <g class="mono" font-size="22">
+        <g transform="translate(68 339)">
+          <rect width="194" height="48" rx="8" fill="#a8ce6f" fill-opacity=".075" stroke="#a9c97d" stroke-opacity=".35"/>
+          <path d="m18 32 8-18 8 18-8-4Z" fill="none" stroke="#d3f991" stroke-width="1.5" stroke-linejoin="round"/>
+          <text x="46" y="31" fill="#d9e6c7">Arch Linux</text>
+        </g>
+
+        <g transform="translate(274 339)">
+          <rect width="184" height="48" rx="8" fill="#a0c4bb" fill-opacity=".035" stroke="#354b44"/>
+          <circle cx="25" cy="25" r="8" stroke="#a5c4b5" stroke-width="1.5"/>
+          <circle cx="31" cy="16" r="3" fill="#a5c4b5"/>
+          <text x="46" y="31" fill="#c0d0c8">Lua + XUI</text>
+        </g>
+
+        <g transform="translate(470 339)">
+          <rect width="306" height="48" rx="8" fill="#a0c4bb" fill-opacity=".035" stroke="#354b44"/>
+          <path d="m24 18-6 6 6 6m7-12 6 6-6 6" stroke="#a5c4b5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="49" y="31" fill="#c0d0c8">C/C++ (VS2008/XDK)</text>
+        </g>
+
+        <g transform="translate(788 339)">
+          <rect width="209" height="48" rx="8" fill="#a0c4bb" fill-opacity=".035" stroke="#354b44"/>
+          <ellipse cx="26" cy="18" rx="8" ry="3.5" stroke="#a5c4b5" stroke-width="1.5"/>
+          <path d="M18 18v12c0 4.7 16 4.7 16 0V18M18 24c0 4.7 16 4.7 16 0" stroke="#a5c4b5" stroke-width="1.5"/>
+          <text x="47" y="31" fill="#c0d0c8">PHP + MySQL</text>
+        </g>
+      </g>
+
+      <!-- Original vector circuit illustration -->
+      <g aria-hidden="true">
+        <ellipse cx="1291" cy="250" rx="284" ry="211" fill="url(#field)"/>
+
+        <g fill="none" stroke="#749488" stroke-width="1" opacity="0.19">
+          <path d="M1037 126h24m-12-12v24 M1522 126h24m-12-12v24 M1037 383h24m-12-12v24 M1522 383h24m-12-12v24"/>
+          <path d="M1291 103v308 M1042 263h497" stroke-dasharray="3 10"/>
+        </g>
+
+        <polygon points="1291.00,138.00 1528.29,275.00 1291.00,412.00 1053.71,275.00" fill="none" stroke="#273c34" stroke-width="1"/>
+        <polygon points="1291.00,126.00 1528.29,263.00 1291.00,400.00 1053.71,263.00" fill="url(#board)" stroke="#395647" stroke-width="1.4"/>
+        <polygon points="1528.29,263.00 1291.00,400.00 1291.00,412.00 1528.29,275.00" fill="#0a1611" stroke="#263e31" stroke-width="1"/>
+        <polygon points="1053.71,263.00 1291.00,400.00 1291.00,412.00 1053.71,275.00" fill="#0a1611" stroke="#263e31" stroke-width="1"/>
+
+        <path d="M 1161.96 248.50 L 1135.98 263.50 L 1135.98 273.50 L 1114.33 286.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1114.33" cy="286.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1187.94 263.50 L 1161.96 278.50 L 1161.96 288.50 L 1140.31 301.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
+        <circle cx="1140.31" cy="301.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1213.92 278.50 L 1187.94 293.50 L 1187.94 303.50 L 1166.29 316.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
+        <circle cx="1166.29" cy="316.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1239.90 293.50 L 1213.92 308.50 L 1213.92 318.50 L 1192.27 331.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1192.27" cy="331.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1265.89 308.50 L 1239.90 323.50 L 1239.90 333.50 L 1218.25 346.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
+        <circle cx="1218.25" cy="346.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1291.87 323.50 L 1265.89 338.50 L 1265.89 348.50 L 1244.23 361.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
+        <circle cx="1244.23" cy="361.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1317.85 338.50 L 1291.87 353.50 L 1291.87 363.50 L 1270.22 376.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1270.22" cy="376.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1314.38 187.50 L 1288.40 172.50 L 1271.08 172.50 L 1249.43 160.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1249.43" cy="160.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1288.40 202.50 L 1262.42 187.50 L 1245.10 187.50 L 1223.45 175.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
+        <circle cx="1223.45" cy="175.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1262.42 217.50 L 1236.44 202.50 L 1219.12 202.50 L 1197.47 190.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
+        <circle cx="1197.47" cy="190.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1236.44 232.50 L 1210.46 217.50 L 1193.14 217.50 L 1171.49 205.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1171.49" cy="205.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1210.46 247.50 L 1184.48 232.50 L 1167.16 232.50 L 1145.51 220.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
+        <circle cx="1145.51" cy="220.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1184.48 262.50 L 1158.50 247.50 L 1141.18 247.50 L 1119.53 235.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
+        <circle cx="1119.53" cy="235.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1158.50 277.50 L 1132.52 262.50 L 1115.20 262.50 L 1093.55 250.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1093.55" cy="250.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1420.04 275.50 L 1446.02 260.50 L 1446.02 250.50 L 1467.67 238.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1467.67" cy="238.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1394.06 260.50 L 1420.04 245.50 L 1420.04 235.50 L 1441.69 223.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
+        <circle cx="1441.69" cy="223.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1368.08 245.50 L 1394.06 230.50 L 1394.06 220.50 L 1415.71 208.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
+        <circle cx="1415.71" cy="208.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1342.10 230.50 L 1368.08 215.50 L 1368.08 205.50 L 1389.73 193.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1389.73" cy="193.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1316.11 215.50 L 1342.10 200.50 L 1342.10 190.50 L 1363.75 178.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
+        <circle cx="1363.75" cy="178.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1290.13 200.50 L 1316.11 185.50 L 1316.11 175.50 L 1337.77 163.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
+        <circle cx="1337.77" cy="163.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1264.15 185.50 L 1290.13 170.50 L 1290.13 160.50 L 1311.78 148.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1311.78" cy="148.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1267.62 336.50 L 1293.60 351.50 L 1310.92 351.50 L 1332.57 364.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1332.57" cy="364.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1293.60 321.50 L 1319.58 336.50 L 1336.90 336.50 L 1358.55 349.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
+        <circle cx="1358.55" cy="349.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1319.58 306.50 L 1345.56 321.50 L 1362.88 321.50 L 1384.53 334.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
+        <circle cx="1384.53" cy="334.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1345.56 291.50 L 1371.54 306.50 L 1388.86 306.50 L 1410.51 319.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1410.51" cy="319.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1371.54 276.50 L 1397.52 291.50 L 1414.84 291.50 L 1436.49 304.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
+        <circle cx="1436.49" cy="304.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1397.52 261.50 L 1423.50 276.50 L 1440.82 276.50 L 1462.47 289.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
+        <circle cx="1462.47" cy="289.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path d="M 1423.50 246.50 L 1449.48 261.50 L 1466.80 261.50 L 1488.45 274.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
+        <circle cx="1488.45" cy="274.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
+
+        <path class="signal" d="M 1187.94 263.50 L 1161.96 278.50 L 1161.96 288.50 L 1140.31 301.00" fill="none" stroke="#d4ff71" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="12 110"/>
+        <path class="signal" d="M 1319.58 306.50 L 1345.56 321.50 L 1362.88 321.50 L 1384.53 334.00" fill="none" stroke="#d4ff71" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="12 110"/>
+
+        <ellipse cx="1291.00" cy="141.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
+        <ellipse cx="1498.85" cy="261.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
+        <ellipse cx="1291.00" cy="381.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
+        <ellipse cx="1083.15" cy="261.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
+
+        <path d="M 1175.82 230.50 L 1162.83 238.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1192.27 240.00 L 1179.28 247.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1208.73 249.50 L 1195.74 257.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1225.18 259.00 L 1212.19 266.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1241.64 268.50 L 1228.65 276.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1258.09 278.00 L 1245.10 285.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1274.55 287.50 L 1261.56 295.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+
+        <path d="M 1274.55 154.50 L 1261.56 147.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1258.09 164.00 L 1245.10 156.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1241.64 173.50 L 1228.65 166.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1225.18 183.00 L 1212.19 175.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1208.73 192.50 L 1195.74 185.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1192.27 202.00 L 1179.28 194.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1175.82 211.50 L 1162.83 204.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+
+        <path d="M 1406.18 211.50 L 1419.17 204.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1389.73 202.00 L 1402.72 194.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1373.27 192.50 L 1386.26 185.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1356.82 183.00 L 1369.81 175.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1340.36 173.50 L 1353.35 166.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1323.91 164.00 L 1336.90 156.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1307.45 154.50 L 1320.44 147.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+
+        <path d="M 1307.45 287.50 L 1320.44 295.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1323.91 278.00 L 1336.90 285.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1340.36 268.50 L 1353.35 276.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1356.82 259.00 L 1369.81 266.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1373.27 249.50 L 1386.26 257.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1389.73 240.00 L 1402.72 247.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+        <path d="M 1406.18 230.50 L 1419.17 238.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
+
+        <polygon points="1152.44,196.00 1291.00,276.00 1291.00,299.00 1152.44,219.00" fill="#203220" stroke="#789455" stroke-opacity="0.45" stroke-width="1.2"/>
+        <polygon points="1429.56,196.00 1291.00,276.00 1291.00,299.00 1429.56,219.00" fill="#14251a" stroke="#789455" stroke-opacity="0.45" stroke-width="1.2"/>
+        <polygon points="1291.00,116.00 1429.56,196.00 1291.00,276.00 1152.44,196.00" fill="url(#chip)" stroke="#bfe782" stroke-width="1.8"/>
+        <polygon points="1291.00,127.50 1408.78,195.50 1291.00,263.50 1173.22,195.50" fill="none" stroke="#a3cf71" stroke-opacity="0.32" stroke-width="1"/>
+        <polygon points="1291.00,90.00 1443.42,178.00 1291.00,266.00 1138.58,178.00" fill="none" stroke="#bbf277" stroke-opacity="0.18" stroke-width="1"/>
+
+        <g transform="translate(1291.00 195.00) matrix(.866025 .5 -.866025 .5 0 0)" fill="none" stroke="#d4ff87" stroke-width="6.5" stroke-linecap="square" stroke-linejoin="miter">
+          <path d="M-31-20 -12 0 -31 20 M2 20H33"/>
+        </g>
+
+        <ellipse cx="1291.00" cy="137.00" rx="3.3" ry="1.9" fill="#d4ff87"/>
+        <path d="M1370.67 204.00L1305.72 241.50" stroke="#ceef91" stroke-opacity="0.24" stroke-width="2"/>
+        <path d="M1409 204h74l28-28" fill="none" stroke="#7b9573" stroke-width="1"/>
+        <circle cx="1409" cy="204" r="3" fill="#d4ff87"/>
+        <text x="1526" y="166" text-anchor="end" class="micro" fill="#a6bc9a">LOW-LEVEL</text>
+        <text x="1291" y="421" text-anchor="middle" class="micro" fill="#94b39e" letter-spacing="3">CODE / TINKER / REPEAT</text>
+      </g>
+
+      <!-- Bottom command line -->
+      <path d="M68 442H1532" stroke="#a6c9b5" stroke-opacity=".14"/>
+
+      <g class="mono" font-size="17">
+        <text x="68" y="477" fill="#b7c4b8"><tspan fill="#d3f991">$ </tspan>build. break. understand. repeat.<tspan class="cursor" dx="7" fill="#d3f991">▌</tspan></text>
+        <text x="1532" y="477" text-anchor="end" fill="#91a699" font-size="15" letter-spacing="1.5">SYSTEMS / EMULATION / WEB</text>
+      </g>
     </g>
 
-    <!-- Editable profile text -->
-    <path d="M68 112h23" stroke="#d3f991" stroke-width="3"/>
-    <text x="104" y="118" class="mono" font-size="19" letter-spacing="2" fill="#c2cfbf">IT @ WENTWORTH</text>
-    <text x="62" y="238" class="sans" font-size="136" textLength="867" lengthAdjust="spacingAndGlyphs" font-weight="750" letter-spacing="-5.8" fill="#f0f3e9">frankischilling<tspan fill="#d3f991">.</tspan></text>
-    <text x="68" y="304" class="sans" font-size="28" fill="#aabbb3">GNU/Linux<tspan fill="#587266">   /   </tspan>Emulators<tspan fill="#587266">   /   </tspan>PHP / Python / C / C++</text>
+    <g class="compact-layout">
+      <path d="M68 73h26" stroke="#d3f991" stroke-width="5"/>
+      <text x="116" y="87" class="mono" font-size="44" letter-spacing="2" fill="#c2cfbf">IT @ WENTWORTH</text>
+      <text x="62" y="245" class="sans" font-size="190" textLength="1464" lengthAdjust="spacingAndGlyphs" font-weight="700" letter-spacing="-5.8" fill="#f0f3e9">frankischilling<tspan fill="#d3f991">.</tspan></text>
+      <text x="68" y="327" class="sans" font-size="44" fill="#aabbb3">GNU/Linux<tspan fill="#91a99d"> / </tspan>Emulators<tspan fill="#91a99d"> / </tspan>PHP / Python / C / C++</text>
 
-    <!-- Capability tags: original content retained. -->
-    <g class="mono" font-size="22">
-      <g transform="translate(68 339)">
-        <rect width="194" height="48" rx="8" fill="#a8ce6f" fill-opacity=".075" stroke="#a9c97d" stroke-opacity=".35"/>
-        <path d="m18 32 8-18 8 18-8-4Z" fill="none" stroke="#d3f991" stroke-width="1.5" stroke-linejoin="round"/>
-        <text x="46" y="31" fill="#d9e6c7">Arch Linux</text>
-      </g>
-      <g transform="translate(274 339)">
-        <rect width="184" height="48" rx="8" fill="#a0c4bb" fill-opacity=".035" stroke="#354b44"/>
-        <circle cx="25" cy="25" r="8" stroke="#a5c4b5" stroke-width="1.5"/>
-        <circle cx="31" cy="16" r="3" fill="#a5c4b5"/>
-        <text x="46" y="31" fill="#c0d0c8">Lua + XUI</text>
-      </g>
-      <g transform="translate(470 339)">
-        <rect width="306" height="48" rx="8" fill="#a0c4bb" fill-opacity=".035" stroke="#354b44"/>
-        <path d="m24 18-6 6 6 6m7-12 6 6-6 6" stroke="#a5c4b5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <text x="49" y="31" fill="#c0d0c8">C/C++ (VS2008/XDK)</text>
-      </g>
-      <g transform="translate(788 339)">
-        <rect width="209" height="48" rx="8" fill="#a0c4bb" fill-opacity=".035" stroke="#354b44"/>
-        <ellipse cx="26" cy="18" rx="8" ry="3.5" stroke="#a5c4b5" stroke-width="1.5"/>
-        <path d="M18 18v12c0 4.7 16 4.7 16 0V18M18 24c0 4.7 16 4.7 16 0" stroke="#a5c4b5" stroke-width="1.5"/>
-        <text x="47" y="31" fill="#c0d0c8">PHP + MySQL</text>
-      </g>
-    </g>
+      <g class="mono" font-size="40">
+        <g transform="translate(68 376)">
+          <rect width="300" height="78" rx="12" fill="#a8ce6f" fill-opacity=".075" stroke="#a9c97d" stroke-opacity=".45" stroke-width="2"/>
+          <text x="24" y="52" fill="#d9e6c7">Arch Linux</text>
+        </g>
 
-    <!-- Original vector circuit illustration -->
-    <g aria-hidden="true">
-      <ellipse cx="1291" cy="250" rx="284" ry="211" fill="url(#field)"/>
-      <g fill="none" stroke="#749488" stroke-width="1" opacity="0.19">
-        <path d="M1037 126h24m-12-12v24 M1522 126h24m-12-12v24 M1037 383h24m-12-12v24 M1522 383h24m-12-12v24"/>
-        <path d="M1291 103v308 M1042 263h497" stroke-dasharray="3 10"/>
-      </g>
-      <polygon points="1291.00,138.00 1528.29,275.00 1291.00,412.00 1053.71,275.00" fill="none" stroke="#273c34" stroke-width="1"/>
-      <polygon points="1291.00,126.00 1528.29,263.00 1291.00,400.00 1053.71,263.00" fill="url(#board)" stroke="#395647" stroke-width="1.4"/>
-      <polygon points="1528.29,263.00 1291.00,400.00 1291.00,412.00 1528.29,275.00" fill="#0a1611" stroke="#263e31" stroke-width="1"/>
-      <polygon points="1053.71,263.00 1291.00,400.00 1291.00,412.00 1053.71,275.00" fill="#0a1611" stroke="#263e31" stroke-width="1"/>
-      <path d="M 1161.96 248.50 L 1135.98 263.50 L 1135.98 273.50 L 1114.33 286.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1114.33" cy="286.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1187.94 263.50 L 1161.96 278.50 L 1161.96 288.50 L 1140.31 301.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-      <circle cx="1140.31" cy="301.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1213.92 278.50 L 1187.94 293.50 L 1187.94 303.50 L 1166.29 316.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-      <circle cx="1166.29" cy="316.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1239.90 293.50 L 1213.92 308.50 L 1213.92 318.50 L 1192.27 331.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1192.27" cy="331.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1265.89 308.50 L 1239.90 323.50 L 1239.90 333.50 L 1218.25 346.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-      <circle cx="1218.25" cy="346.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1291.87 323.50 L 1265.89 338.50 L 1265.89 348.50 L 1244.23 361.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-      <circle cx="1244.23" cy="361.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1317.85 338.50 L 1291.87 353.50 L 1291.87 363.50 L 1270.22 376.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1270.22" cy="376.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1314.38 187.50 L 1288.40 172.50 L 1271.08 172.50 L 1249.43 160.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1249.43" cy="160.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1288.40 202.50 L 1262.42 187.50 L 1245.10 187.50 L 1223.45 175.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-      <circle cx="1223.45" cy="175.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1262.42 217.50 L 1236.44 202.50 L 1219.12 202.50 L 1197.47 190.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-      <circle cx="1197.47" cy="190.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1236.44 232.50 L 1210.46 217.50 L 1193.14 217.50 L 1171.49 205.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1171.49" cy="205.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1210.46 247.50 L 1184.48 232.50 L 1167.16 232.50 L 1145.51 220.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-      <circle cx="1145.51" cy="220.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1184.48 262.50 L 1158.50 247.50 L 1141.18 247.50 L 1119.53 235.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-      <circle cx="1119.53" cy="235.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1158.50 277.50 L 1132.52 262.50 L 1115.20 262.50 L 1093.55 250.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1093.55" cy="250.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1420.04 275.50 L 1446.02 260.50 L 1446.02 250.50 L 1467.67 238.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1467.67" cy="238.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1394.06 260.50 L 1420.04 245.50 L 1420.04 235.50 L 1441.69 223.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-      <circle cx="1441.69" cy="223.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1368.08 245.50 L 1394.06 230.50 L 1394.06 220.50 L 1415.71 208.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-      <circle cx="1415.71" cy="208.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1342.10 230.50 L 1368.08 215.50 L 1368.08 205.50 L 1389.73 193.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1389.73" cy="193.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1316.11 215.50 L 1342.10 200.50 L 1342.10 190.50 L 1363.75 178.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-      <circle cx="1363.75" cy="178.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1290.13 200.50 L 1316.11 185.50 L 1316.11 175.50 L 1337.77 163.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-      <circle cx="1337.77" cy="163.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1264.15 185.50 L 1290.13 170.50 L 1290.13 160.50 L 1311.78 148.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1311.78" cy="148.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1267.62 336.50 L 1293.60 351.50 L 1310.92 351.50 L 1332.57 364.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1332.57" cy="364.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1293.60 321.50 L 1319.58 336.50 L 1336.90 336.50 L 1358.55 349.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-      <circle cx="1358.55" cy="349.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1319.58 306.50 L 1345.56 321.50 L 1362.88 321.50 L 1384.53 334.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-      <circle cx="1384.53" cy="334.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1345.56 291.50 L 1371.54 306.50 L 1388.86 306.50 L 1410.51 319.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1410.51" cy="319.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1371.54 276.50 L 1397.52 291.50 L 1414.84 291.50 L 1436.49 304.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-      <circle cx="1436.49" cy="304.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1397.52 261.50 L 1423.50 276.50 L 1440.82 276.50 L 1462.47 289.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-      <circle cx="1462.47" cy="289.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path d="M 1423.50 246.50 L 1449.48 261.50 L 1466.80 261.50 L 1488.45 274.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-      <circle cx="1488.45" cy="274.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-      <path class="signal" d="M 1187.94 262.50 L 1161.96 277.50 L 1161.96 287.50 L 1140.31 300.00" fill="none" stroke="#d4ff71" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="12 110"/>
-      <path class="signal" d="M 1368.08 277.50 L 1394.06 292.50 L 1394.06 302.50 L 1415.71 315.00" fill="none" stroke="#d4ff71" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="12 110"/>
-      <ellipse cx="1291.00" cy="141.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
-      <ellipse cx="1498.85" cy="261.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
-      <ellipse cx="1291.00" cy="381.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
-      <ellipse cx="1083.15" cy="261.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
-      <path d="M 1175.82 230.50 L 1162.83 238.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1192.27 240.00 L 1179.28 247.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1208.73 249.50 L 1195.74 257.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1225.18 259.00 L 1212.19 266.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1241.64 268.50 L 1228.65 276.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1258.09 278.00 L 1245.10 285.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1274.55 287.50 L 1261.56 295.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1274.55 154.50 L 1261.56 147.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1258.09 164.00 L 1245.10 156.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1241.64 173.50 L 1228.65 166.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1225.18 183.00 L 1212.19 175.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1208.73 192.50 L 1195.74 185.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1192.27 202.00 L 1179.28 194.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1175.82 211.50 L 1162.83 204.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1406.18 211.50 L 1419.17 204.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1389.73 202.00 L 1402.72 194.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1373.27 192.50 L 1386.26 185.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1356.82 183.00 L 1369.81 175.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1340.36 173.50 L 1353.35 166.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1323.91 164.00 L 1336.90 156.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1307.45 154.50 L 1320.44 147.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1307.45 287.50 L 1320.44 295.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1323.91 278.00 L 1336.90 285.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1340.36 268.50 L 1353.35 276.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1356.82 259.00 L 1369.81 266.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1373.27 249.50 L 1386.26 257.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1389.73 240.00 L 1402.72 247.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <path d="M 1406.18 230.50 L 1419.17 238.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-      <polygon points="1152.44,196.00 1291.00,276.00 1291.00,299.00 1152.44,219.00" fill="#203220" stroke="#789455" stroke-opacity="0.45" stroke-width="1.2"/>
-      <polygon points="1429.56,196.00 1291.00,276.00 1291.00,299.00 1429.56,219.00" fill="#14251a" stroke="#789455" stroke-opacity="0.45" stroke-width="1.2"/>
-      <polygon points="1291.00,116.00 1429.56,196.00 1291.00,276.00 1152.44,196.00" fill="url(#chip)" stroke="#bfe782" stroke-width="1.8"/>
-      <polygon points="1291.00,127.50 1408.78,195.50 1291.00,263.50 1173.22,195.50" fill="none" stroke="#a3cf71" stroke-opacity="0.32" stroke-width="1"/>
-      <polygon points="1291.00,90.00 1443.42,178.00 1291.00,266.00 1138.58,178.00" fill="none" stroke="#bbf277" stroke-opacity="0.18" stroke-width="1"/>
-      <g transform="translate(1291.00 195.00) matrix(.866025 .5 -.866025 .5 0 0)" fill="none" stroke="#d4ff87" stroke-width="6.5" stroke-linecap="square" stroke-linejoin="miter">
-        <path d="M-31-20 -12 0 -31 20 M2 20H33"/>
-      </g>
-      <ellipse cx="1291.00" cy="137.00" rx="3.3" ry="1.9" fill="#d4ff87"/>
-      <path d="M1370.67 204.00L1305.72 241.50" stroke="#ceef91" stroke-opacity="0.24" stroke-width="2"/>
-      <path d="M1409 204h74l28-28" fill="none" stroke="#7b9573" stroke-width="1"/>
-      <circle cx="1409" cy="204" r="3" fill="#d4ff87"/>
-      <text x="1526" y="166" text-anchor="end" class="micro" fill="#a6bc9a">BARE METAL</text>
-      <text x="1291" y="421" text-anchor="middle" class="micro" fill="#749381" letter-spacing="3">CODE / TINKER / REPEAT</text>
-    </g>
+        <g transform="translate(392 376)">
+          <rect width="275" height="78" rx="12" fill="#a0c4bb" fill-opacity=".035" stroke="#496458" stroke-width="2"/>
+          <text x="24" y="52" fill="#c0d0c8">Lua + XUI</text>
+        </g>
 
-    <!-- Bottom command line -->
-    <path d="M68 442H1532" stroke="#a6c9b5" stroke-opacity=".14"/>
-    <g class="mono" font-size="17">
-      <text x="68" y="477" fill="#b7c4b8"><tspan fill="#d3f991">$ </tspan>build. break. understand. repeat.<tspan class="cursor" dx="7" fill="#d3f991">▌</tspan></text>
-      <text x="1532" y="477" text-anchor="end" fill="#91a699" font-size="15" letter-spacing="1.5">SYSTEMS / EMULATION / WEB</text>
+        <g transform="translate(691 376)">
+          <rect width="492" height="78" rx="12" fill="#a0c4bb" fill-opacity=".035" stroke="#496458" stroke-width="2"/>
+          <text x="24" y="52" fill="#c0d0c8">C/C++ (VS2008/XDK)</text>
+        </g>
+
+        <g transform="translate(1207 376)">
+          <rect width="325" height="78" rx="12" fill="#a0c4bb" fill-opacity=".035" stroke="#496458" stroke-width="2"/>
+          <text x="24" y="52" fill="#c0d0c8">PHP + MySQL</text>
+        </g>
+      </g>
     </g>
   </g>
+
   <rect x=".75" y=".75" width="1598.5" height="498.5" rx="24" stroke="#71947d" stroke-opacity=".28" stroke-width="1.5"/>
 </svg>
