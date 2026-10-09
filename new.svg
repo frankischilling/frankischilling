@@ -1,321 +1,283 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="500" viewBox="0 0 1600 500" fill="none" role="img" aria-labelledby="title desc" focusable="false" xml:lang="en">
-  <title id="title">frankischilling — IT, GNU/Linux, emulators and code</title>
-  <desc id="desc">GitHub profile banner for frankischilling. IT @ Wentworth. GNU/Linux, emulators, PHP, Python, C and C++. Arch Linux; Lua + XUI; C/C++ (VS2008/XDK); PHP + MySQL. Graphite and lime artwork, with an isometric circuit board in the wide layout.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="1160" viewBox="0 0 1600 1160" fill="none" role="img" aria-labelledby="title description" focusable="false" xml:lang="en">
+  <title id="title">Frank's workbench, supervised by Cupid the Cat</title>
+  <desc id="description">frankischilling: IT at Wentworth, GNU/Linux, systems, emulators, compilers and terminal tools. Cupid the Cat projects: cupid-os, cupid-nes, cupid-n64, cupidwm, cupidfm, cherubsh and cupidfetch. Also on the workbench: Axiom64, holyc-ocaml and the Robotron 64 decompilation. Artwork of a fluffy cream and orange cat with blue eyes behind a terminal. Project links are in the profile README below this image.</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1600" y2="500" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#121a19"/>
-      <stop offset=".52" stop-color="#0b1112"/>
-      <stop offset="1" stop-color="#101b16"/>
+    <linearGradient id="background" x1="0" y1="0" x2="1600" y2="1160" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121b25"/>
+      <stop offset=".55" stop-color="#0c131c"/>
+      <stop offset="1" stop-color="#101923"/>
     </linearGradient>
-    <radialGradient id="ambient" cx="0" cy="0" r="1" gradientTransform="translate(202 -83) rotate(40) scale(1050 540)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#304a3b" stop-opacity=".28"/>
-      <stop offset="1" stop-color="#304a3b" stop-opacity="0"/>
+    <radialGradient id="warm-light">
+      <stop stop-color="#d58b71" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#d58b71" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="field">
-      <stop stop-color="#96cf60" stop-opacity=".15"/>
-      <stop offset=".58" stop-color="#7db458" stop-opacity=".05"/>
-      <stop offset="1" stop-color="#7db458" stop-opacity="0"/>
+    <radialGradient id="cool-light">
+      <stop stop-color="#83cbbc" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#83cbbc" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="board" x1="1060" y1="160" x2="1500" y2="390" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#15241b"/>
-      <stop offset="1" stop-color="#102018" stop-opacity=".65"/>
+    <linearGradient id="fur" x1="130" y1="75" x2="307" y2="289" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff4df"/>
+      <stop offset=".62" stop-color="#eddbbe"/>
+      <stop offset="1" stop-color="#d9b995"/>
     </linearGradient>
-    <linearGradient id="chip" x1="1200" y1="139" x2="1375" y2="256" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#476139"/>
-      <stop offset=".45" stop-color="#283f27"/>
-      <stop offset="1" stop-color="#16291c"/>
+    <linearGradient id="ginger" x1="114" y1="70" x2="308" y2="194" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c38b62"/>
+      <stop offset=".55" stop-color="#e8bb87"/>
+      <stop offset="1" stop-color="#bd815e"/>
     </linearGradient>
-    <linearGradient id="edge" x1="30" y1="0" x2="1570" y2="0" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#c7f58c" stop-opacity="0"/>
-      <stop offset=".15" stop-color="#c7f58c" stop-opacity=".72"/>
-      <stop offset=".52" stop-color="#c7f58c" stop-opacity=".16"/>
-      <stop offset="1" stop-color="#c7f58c" stop-opacity="0"/>
+    <linearGradient id="terminal" x1="97" y1="265" x2="322" y2="358" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#243a43"/>
+      <stop offset="1" stop-color="#14252f"/>
     </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#a0c5ad" stroke-opacity=".035" stroke-width="1"/>
+    <linearGradient id="top-edge" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#edb397" stop-opacity=".15"/>
+      <stop offset=".27" stop-color="#edb397" stop-opacity=".85"/>
+      <stop offset=".65" stop-color="#97cfc2" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#97cfc2" stop-opacity=".1"/>
+    </linearGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#a5c5cb" opacity=".09"/>
     </pattern>
-    <clipPath id="bounds">
-      <rect x="1" y="1" width="1598" height="498" rx="24"/>
+    <clipPath id="canvas">
+      <rect x="1" y="1" width="1598" height="1158" rx="28"/>
     </clipPath>
     <style>
       .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
-      .mono, .micro { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
-      .micro { font-size: 14px; letter-spacing: 1.5px; }
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+      .eyebrow { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 20px; letter-spacing: 2px; }
+      .project { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; font-size: 34px; font-weight: 600; letter-spacing: -1px; }
+      .detail { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; font-size: 23px; }
       .compact-layout { display: none; }
-
-      /* Embedded image viewport: keep the original profile details legible on phones. */
+      /* Use larger text at the image's actual embedded viewport width. */
       @media (max-width: 720px) {
         .wide-layout { display: none; }
         .compact-layout { display: inline; }
       }
-
-      /* Static by default. Optional intro motion stops within 4.2 seconds. */
-      @media (prefers-reduced-motion: no-preference) {
-        .signal { animation: signal-flow 4s linear 1; }
-        .cursor { animation: cursor-blink 1.4s steps(1, end) 3; }
-      }
-
-      @keyframes signal-flow {
-        to { stroke-dashoffset: -122; }
-      }
-
-      @keyframes cursor-blink {
-        0%, 55% { opacity: 1; }
-        56%, 100% { opacity: 0; }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        .signal, .cursor { animation: none; }
-      }
     </style>
-  </defs>
 
-  <!-- Self-contained SVG: no fonts to download, scripts, images, or foreignObject. -->
-  <g clip-path="url(#bounds)">
-    <rect width="1600" height="500" fill="url(#background)"/>
-    <rect width="1600" height="500" fill="url(#ambient)"/>
-    <rect width="1600" height="500" fill="url(#grid)"/>
-    <path d="M36 1H1564" stroke="url(#edge)" stroke-width="2"/>
-
-    <g class="wide-layout">
-      <path d="M40 77H1560" stroke="#a6c9b5" stroke-opacity=".12"/>
-
-      <!-- Window header / identity -->
-      <g class="mono" font-size="18">
-        <path d="m66 31 10 9-10 9m17 0h12" stroke="#d3f991" stroke-width="2.5" stroke-linecap="square"/>
-        <text x="116" y="47" fill="#b4c1b9">~/frankischilling<tspan fill="#91a99d"> / README</tspan></text>
-        <text x="1532" y="47" text-anchor="end" fill="#99ad9f" font-size="15" letter-spacing="2">A PERSONAL WORKSPACE</text>
-      </g>
-
-      <!-- Editable profile text -->
-      <path d="M68 112h23" stroke="#d3f991" stroke-width="3"/>
-      <text x="104" y="118" class="mono" font-size="19" letter-spacing="2" fill="#c2cfbf">IT @ WENTWORTH</text>
-      <text x="62" y="238" class="sans" font-size="136" textLength="867" lengthAdjust="spacingAndGlyphs" font-weight="700" letter-spacing="-5.8" fill="#f0f3e9">frankischilling<tspan fill="#d3f991">.</tspan></text>
-      <text x="68" y="304" class="sans" font-size="28" fill="#aabbb3">GNU/Linux<tspan fill="#91a99d">   /   </tspan>Emulators<tspan fill="#91a99d">   /   </tspan>PHP / Python / C / C++</text>
-
-      <!-- Capability tags: original content retained. -->
-      <g class="mono" font-size="22">
-        <g transform="translate(68 339)">
-          <rect width="194" height="48" rx="8" fill="#a8ce6f" fill-opacity=".075" stroke="#a9c97d" stroke-opacity=".35"/>
-          <path d="m18 32 8-18 8 18-8-4Z" fill="none" stroke="#d3f991" stroke-width="1.5" stroke-linejoin="round"/>
-          <text x="46" y="31" fill="#d9e6c7">Arch Linux</text>
-        </g>
-
-        <g transform="translate(274 339)">
-          <rect width="184" height="48" rx="8" fill="#a0c4bb" fill-opacity=".035" stroke="#354b44"/>
-          <circle cx="25" cy="25" r="8" stroke="#a5c4b5" stroke-width="1.5"/>
-          <circle cx="31" cy="16" r="3" fill="#a5c4b5"/>
-          <text x="46" y="31" fill="#c0d0c8">Lua + XUI</text>
-        </g>
-
-        <g transform="translate(470 339)">
-          <rect width="306" height="48" rx="8" fill="#a0c4bb" fill-opacity=".035" stroke="#354b44"/>
-          <path d="m24 18-6 6 6 6m7-12 6 6-6 6" stroke="#a5c4b5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <text x="49" y="31" fill="#c0d0c8">C/C++ (VS2008/XDK)</text>
-        </g>
-
-        <g transform="translate(788 339)">
-          <rect width="209" height="48" rx="8" fill="#a0c4bb" fill-opacity=".035" stroke="#354b44"/>
-          <ellipse cx="26" cy="18" rx="8" ry="3.5" stroke="#a5c4b5" stroke-width="1.5"/>
-          <path d="M18 18v12c0 4.7 16 4.7 16 0V18M18 24c0 4.7 16 4.7 16 0" stroke="#a5c4b5" stroke-width="1.5"/>
-          <text x="47" y="31" fill="#c0d0c8">PHP + MySQL</text>
-        </g>
-      </g>
-
-      <!-- Original vector circuit illustration -->
-      <g aria-hidden="true">
-        <ellipse cx="1291" cy="250" rx="284" ry="211" fill="url(#field)"/>
-
-        <g fill="none" stroke="#749488" stroke-width="1" opacity="0.19">
-          <path d="M1037 126h24m-12-12v24 M1522 126h24m-12-12v24 M1037 383h24m-12-12v24 M1522 383h24m-12-12v24"/>
-          <path d="M1291 103v308 M1042 263h497" stroke-dasharray="3 10"/>
-        </g>
-
-        <polygon points="1291.00,138.00 1528.29,275.00 1291.00,412.00 1053.71,275.00" fill="none" stroke="#273c34" stroke-width="1"/>
-        <polygon points="1291.00,126.00 1528.29,263.00 1291.00,400.00 1053.71,263.00" fill="url(#board)" stroke="#395647" stroke-width="1.4"/>
-        <polygon points="1528.29,263.00 1291.00,400.00 1291.00,412.00 1528.29,275.00" fill="#0a1611" stroke="#263e31" stroke-width="1"/>
-        <polygon points="1053.71,263.00 1291.00,400.00 1291.00,412.00 1053.71,275.00" fill="#0a1611" stroke="#263e31" stroke-width="1"/>
-
-        <path d="M 1161.96 248.50 L 1135.98 263.50 L 1135.98 273.50 L 1114.33 286.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1114.33" cy="286.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1187.94 263.50 L 1161.96 278.50 L 1161.96 288.50 L 1140.31 301.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-        <circle cx="1140.31" cy="301.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1213.92 278.50 L 1187.94 293.50 L 1187.94 303.50 L 1166.29 316.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-        <circle cx="1166.29" cy="316.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1239.90 293.50 L 1213.92 308.50 L 1213.92 318.50 L 1192.27 331.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1192.27" cy="331.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1265.89 308.50 L 1239.90 323.50 L 1239.90 333.50 L 1218.25 346.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-        <circle cx="1218.25" cy="346.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1291.87 323.50 L 1265.89 338.50 L 1265.89 348.50 L 1244.23 361.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-        <circle cx="1244.23" cy="361.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1317.85 338.50 L 1291.87 353.50 L 1291.87 363.50 L 1270.22 376.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1270.22" cy="376.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1314.38 187.50 L 1288.40 172.50 L 1271.08 172.50 L 1249.43 160.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1249.43" cy="160.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1288.40 202.50 L 1262.42 187.50 L 1245.10 187.50 L 1223.45 175.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-        <circle cx="1223.45" cy="175.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1262.42 217.50 L 1236.44 202.50 L 1219.12 202.50 L 1197.47 190.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-        <circle cx="1197.47" cy="190.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1236.44 232.50 L 1210.46 217.50 L 1193.14 217.50 L 1171.49 205.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1171.49" cy="205.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1210.46 247.50 L 1184.48 232.50 L 1167.16 232.50 L 1145.51 220.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-        <circle cx="1145.51" cy="220.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1184.48 262.50 L 1158.50 247.50 L 1141.18 247.50 L 1119.53 235.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-        <circle cx="1119.53" cy="235.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1158.50 277.50 L 1132.52 262.50 L 1115.20 262.50 L 1093.55 250.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1093.55" cy="250.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1420.04 275.50 L 1446.02 260.50 L 1446.02 250.50 L 1467.67 238.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1467.67" cy="238.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1394.06 260.50 L 1420.04 245.50 L 1420.04 235.50 L 1441.69 223.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-        <circle cx="1441.69" cy="223.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1368.08 245.50 L 1394.06 230.50 L 1394.06 220.50 L 1415.71 208.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-        <circle cx="1415.71" cy="208.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1342.10 230.50 L 1368.08 215.50 L 1368.08 205.50 L 1389.73 193.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1389.73" cy="193.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1316.11 215.50 L 1342.10 200.50 L 1342.10 190.50 L 1363.75 178.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-        <circle cx="1363.75" cy="178.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1290.13 200.50 L 1316.11 185.50 L 1316.11 175.50 L 1337.77 163.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-        <circle cx="1337.77" cy="163.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1264.15 185.50 L 1290.13 170.50 L 1290.13 160.50 L 1311.78 148.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1311.78" cy="148.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1267.62 336.50 L 1293.60 351.50 L 1310.92 351.50 L 1332.57 364.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1332.57" cy="364.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1293.60 321.50 L 1319.58 336.50 L 1336.90 336.50 L 1358.55 349.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-        <circle cx="1358.55" cy="349.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1319.58 306.50 L 1345.56 321.50 L 1362.88 321.50 L 1384.53 334.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-        <circle cx="1384.53" cy="334.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1345.56 291.50 L 1371.54 306.50 L 1388.86 306.50 L 1410.51 319.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1410.51" cy="319.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1371.54 276.50 L 1397.52 291.50 L 1414.84 291.50 L 1436.49 304.00" fill="none" stroke="#315b48" stroke-width="1.4"/>
-        <circle cx="1436.49" cy="304.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1397.52 261.50 L 1423.50 276.50 L 1440.82 276.50 L 1462.47 289.00" fill="none" stroke="#43633c" stroke-width="1.4"/>
-        <circle cx="1462.47" cy="289.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path d="M 1423.50 246.50 L 1449.48 261.50 L 1466.80 261.50 L 1488.45 274.00" fill="none" stroke="#4b7350" stroke-width="1.4"/>
-        <circle cx="1488.45" cy="274.00" r="2.7" fill="#101e16" stroke="#8aae65" stroke-width="1"/>
-
-        <path class="signal" d="M 1187.94 263.50 L 1161.96 278.50 L 1161.96 288.50 L 1140.31 301.00" fill="none" stroke="#d4ff71" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="12 110"/>
-        <path class="signal" d="M 1319.58 306.50 L 1345.56 321.50 L 1362.88 321.50 L 1384.53 334.00" fill="none" stroke="#d4ff71" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="12 110"/>
-
-        <ellipse cx="1291.00" cy="141.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
-        <ellipse cx="1498.85" cy="261.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
-        <ellipse cx="1291.00" cy="381.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
-        <ellipse cx="1083.15" cy="261.00" rx="5.5" ry="3.2" fill="#09100c" stroke="#547045" stroke-width="1"/>
-
-        <path d="M 1175.82 230.50 L 1162.83 238.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1192.27 240.00 L 1179.28 247.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1208.73 249.50 L 1195.74 257.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1225.18 259.00 L 1212.19 266.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1241.64 268.50 L 1228.65 276.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1258.09 278.00 L 1245.10 285.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1274.55 287.50 L 1261.56 295.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-
-        <path d="M 1274.55 154.50 L 1261.56 147.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1258.09 164.00 L 1245.10 156.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1241.64 173.50 L 1228.65 166.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1225.18 183.00 L 1212.19 175.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1208.73 192.50 L 1195.74 185.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1192.27 202.00 L 1179.28 194.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1175.82 211.50 L 1162.83 204.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-
-        <path d="M 1406.18 211.50 L 1419.17 204.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1389.73 202.00 L 1402.72 194.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1373.27 192.50 L 1386.26 185.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1356.82 183.00 L 1369.81 175.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1340.36 173.50 L 1353.35 166.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1323.91 164.00 L 1336.90 156.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1307.45 154.50 L 1320.44 147.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-
-        <path d="M 1307.45 287.50 L 1320.44 295.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1323.91 278.00 L 1336.90 285.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1340.36 268.50 L 1353.35 276.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1356.82 259.00 L 1369.81 266.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1373.27 249.50 L 1386.26 257.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1389.73 240.00 L 1402.72 247.50" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-        <path d="M 1406.18 230.50 L 1419.17 238.00" stroke="#94a285" stroke-width="4" stroke-linecap="round"/>
-
-        <polygon points="1152.44,196.00 1291.00,276.00 1291.00,299.00 1152.44,219.00" fill="#203220" stroke="#789455" stroke-opacity="0.45" stroke-width="1.2"/>
-        <polygon points="1429.56,196.00 1291.00,276.00 1291.00,299.00 1429.56,219.00" fill="#14251a" stroke="#789455" stroke-opacity="0.45" stroke-width="1.2"/>
-        <polygon points="1291.00,116.00 1429.56,196.00 1291.00,276.00 1152.44,196.00" fill="url(#chip)" stroke="#bfe782" stroke-width="1.8"/>
-        <polygon points="1291.00,127.50 1408.78,195.50 1291.00,263.50 1173.22,195.50" fill="none" stroke="#a3cf71" stroke-opacity="0.32" stroke-width="1"/>
-        <polygon points="1291.00,90.00 1443.42,178.00 1291.00,266.00 1138.58,178.00" fill="none" stroke="#bbf277" stroke-opacity="0.18" stroke-width="1"/>
-
-        <g transform="translate(1291.00 195.00) matrix(.866025 .5 -.866025 .5 0 0)" fill="none" stroke="#d4ff87" stroke-width="6.5" stroke-linecap="square" stroke-linejoin="miter">
-          <path d="M-31-20 -12 0 -31 20 M2 20H33"/>
-        </g>
-
-        <ellipse cx="1291.00" cy="137.00" rx="3.3" ry="1.9" fill="#d4ff87"/>
-        <path d="M1370.67 204.00L1305.72 241.50" stroke="#ceef91" stroke-opacity="0.24" stroke-width="2"/>
-        <path d="M1409 204h74l28-28" fill="none" stroke="#7b9573" stroke-width="1"/>
-        <circle cx="1409" cy="204" r="3" fill="#d4ff87"/>
-        <text x="1526" y="166" text-anchor="end" class="micro" fill="#a6bc9a">LOW-LEVEL</text>
-        <text x="1291" y="421" text-anchor="middle" class="micro" fill="#94b39e" letter-spacing="3">CODE / TINKER / REPEAT</text>
-      </g>
-
-      <!-- Bottom command line -->
-      <path d="M68 442H1532" stroke="#a6c9b5" stroke-opacity=".14"/>
-
-      <g class="mono" font-size="17">
-        <text x="68" y="477" fill="#b7c4b8"><tspan fill="#d3f991">$ </tspan>build. break. understand. repeat.<tspan class="cursor" dx="7" fill="#d3f991">▌</tspan></text>
-        <text x="1532" y="477" text-anchor="end" fill="#91a699" font-size="15" letter-spacing="1.5">SYSTEMS / EMULATION / WEB</text>
-      </g>
+    <!-- Reusable vector marks. All artwork is local to this SVG. -->
+    <g id="paw" fill="currentColor">
+      <ellipse cx="7" cy="9" rx="3.3" ry="4.5" transform="rotate(-27 7 9)"/>
+      <ellipse cx="15" cy="5" rx="3.3" ry="4.5" transform="rotate(-8 15 5)"/>
+      <ellipse cx="24" cy="6" rx="3.3" ry="4.5" transform="rotate(12 24 6)"/>
+      <ellipse cx="31" cy="12" rx="3.3" ry="4.5" transform="rotate(30 31 12)"/>
+      <path d="M10 19C14 12 23 13 27 20c7 12-3 11-8 9C13 30 4 30 10 19Z"/>
+    </g>
+    <g id="heart" fill="currentColor">
+      <path d="M0 7C0-1 10-3 15 4c5-7 15-5 15 3 0 8-15 18-15 18S0 15 0 7Z"/>
+    </g>
+    <g id="chip" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="6" y="6" width="22" height="22" rx="3"/>
+      <rect x="12" y="12" width="10" height="10" rx="1"/>
+      <path d="M12 1v5m10-5v5M12 28v5m10-5v5M1 12h5m-5 10h5m22-10h5m-5 10h5"/>
+    </g>
+    <g id="controller" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 8h17c5 0 7 6 8 12l1 6c0 4-4 6-7 3l-5-5H13l-6 5c-3 3-7 1-6-3l1-6C3 14 5 8 10 8Z"/>
+      <path d="M9 13v10m-5-5h10"/>
+      <circle cx="27" cy="15" r="1.5" fill="currentColor" stroke="none"/>
+      <circle cx="31" cy="20" r="1.5" fill="currentColor" stroke="none"/>
+    </g>
+    <g id="windows" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="1" y="3" width="32" height="27" rx="3"/>
+      <path d="M1 10h32M13 10v20m0-10h20"/>
+      <path d="M6 7h1m4 0h1"/>
+    </g>
+    <g id="prompt" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m4 8 10 9L4 26m16 0h11"/>
     </g>
 
+    <!-- Cupid: flame-point ears, a fluffy ruff, blue eyes and paws on the terminal. -->
+    <g id="cupid">
+      <ellipse cx="211" cy="352" rx="170" ry="16" fill="#050b10" opacity=".45"/>
+      <path d="M309 299c49 2 73-18 60-41-10-18-37-7-27 8" stroke="#9b7157" stroke-width="31" stroke-linecap="round"/>
+      <path d="M309 294c49 2 70-15 58-35-9-14-29-6-25 5" stroke="#e4c09a" stroke-width="22" stroke-linecap="round"/>
+      <path d="M116 220 90 237l10 16-27 9 21 22-12 17 37 7c13 35 174 35 190 0l31-8-13-21 14-20-26-13 4-18-34-13Z" fill="url(#fur)" stroke="#c39c7d" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="m135 215-24 38 21-2-11 35 28-9 18 31 24-19 21 27 24-27 22 18 20-30 26 7-12-33 18 2-24-39Z" fill="#fff2dc"/>
+      <path d="M119 151C98 122 88 82 98 46c31 1 64 17 85 44h50c26-29 61-41 87-43 11 38-3 80-20 105Z" fill="url(#ginger)" stroke="#9e7058" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M117 113c-9-22-13-38-10-50 22 5 44 18 58 37Z" fill="#e8b5a2"/>
+      <path d="M254 100c14-18 35-30 53-35 3 14-1 33-11 51Z" fill="#e8b5a2"/>
+      <path d="m113 93 6 30 27-16Z" fill="#f4d7bb"/>
+      <path d="m278 108 21 17 4-30Z" fill="#f4d7bb"/>
+      <path d="M117 134c17-39 48-51 90-51s82 15 96 51l15 14-7 13 17 17-18 9 8 18-24 4c-15 39-49 54-86 54-39 0-77-18-91-54l-23-5 9-18-18-10 19-16-5-13Z" fill="url(#fur)" stroke="#bd9272" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M110 140c6-22 21-39 38-44 10 19 14 31 5 45-13 19-26 30-44 30Z" fill="url(#ginger)" opacity=".84"/>
+      <path d="M265 96c21 7 33 24 38 43l1 33c-20-3-36-14-45-28-10-17-5-32 6-48Z" fill="url(#ginger)" opacity=".84"/>
+      <path d="M184 89c5 8 7 18 5 26m17-29v25m18-24c-4 8-5 15-4 23" stroke="#d2aa82" stroke-width="6" stroke-linecap="round" opacity=".55"/>
+      <path d="M132 164c9-11 27-13 41-3-4 18-28 21-41 3Z" fill="#f9f6e9" stroke="#896b56" stroke-width="3"/>
+      <path d="M242 161c14-10 32-8 41 3-13 18-37 15-41-3Z" fill="#f9f6e9" stroke="#896b56" stroke-width="3"/>
+      <ellipse cx="155" cy="165" rx="10.5" ry="13" fill="#81bee1"/>
+      <ellipse cx="259" cy="165" rx="10.5" ry="13" fill="#81bee1"/>
+      <ellipse cx="155" cy="166" rx="4.6" ry="10.8" fill="#213e58"/>
+      <ellipse cx="259" cy="166" rx="4.6" ry="10.8" fill="#213e58"/>
+      <circle cx="158" cy="160" r="3.4" fill="#fff"/>
+      <circle cx="262" cy="160" r="3.4" fill="#fff"/>
+      <path d="M132 163c10-10 25-11 40-3m71 0c13-8 28-7 39 3" stroke="#80634f" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="m127 186 12 4m-9 9 12 1m133-13-12 4m10 9-12 1" stroke="#c9a37d" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+      <ellipse cx="187" cy="210" rx="24" ry="17" fill="#fff5e5"/>
+      <ellipse cx="226" cy="210" rx="24" ry="17" fill="#fff5e5"/>
+      <path d="M197 197q10-6 20 0l-10 10Z" fill="#c4857b" stroke="#ae7168" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M207 207v8m0-1c-6 9-13 8-18 3m18-3c6 9 13 8 18 3" stroke="#916c5e" stroke-width="2.2" stroke-linecap="round"/>
+      <g stroke="#fcecd2" stroke-width="2.2" stroke-linecap="round">
+        <path d="m171 210-71-9m73 17-73 10m140-18 74-9m-75 17 73 10"/>
+      </g>
+      <g fill="#bb9475">
+        <circle cx="178" cy="204" r="1.4"/><circle cx="183" cy="210" r="1.4"/>
+        <circle cx="236" cy="204" r="1.4"/><circle cx="230" cy="210" r="1.4"/>
+      </g>
+      <path d="m186 251 21 15 22-16" stroke="#d4aa87" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="78" y="269" width="263" height="83" rx="12" fill="url(#terminal)" stroke="#5b8d8c" stroke-width="2.5"/>
+      <path d="M91 276h237" stroke="#a3d5c3" stroke-opacity=".2"/>
+      <use xlink:href="#prompt" transform="translate(103 288) scale(1.15)" color="#9dd5c4"/>
+      <text x="153" y="314" class="mono" font-size="18" fill="#d0e4db">cupid@workbench</text>
+      <path d="M103 330h57m9 0h28" stroke="#88b8ac" stroke-width="2" stroke-linecap="round" opacity=".6"/>
+      <use xlink:href="#heart" transform="translate(295 323) scale(.55)" color="#eaaa98"/>
+      <path d="M75 346h270l13 10c0 5-15 9-29 9H89c-13 0-28-4-28-9Z" fill="#29414b" stroke="#5b8d8c" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M181 347h57l-6 6h-45Z" fill="#46616a"/>
+      <path d="M98 266c0-17 10-23 24-22s23 10 21 25l-2 15c-2 9-16 11-25 7-11 1-17-3-17-11Z" fill="#f5e7ce" stroke="#c7a382" stroke-width="2"/>
+      <path d="M275 268c-1-17 9-24 23-24s25 11 24 26l-1 13c-2 9-16 12-25 8-11 1-18-3-19-11Z" fill="#f5e7ce" stroke="#c7a382" stroke-width="2"/>
+      <path d="m112 278 1 11m13-11v12m163-12 1 12m13-12v12" stroke="#c7a382" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- No scripts, remote images, web fonts, animation or foreignObject. -->
+  <g clip-path="url(#canvas)">
+    <rect width="1600" height="1160" fill="url(#background)"/>
+    <ellipse cx="1320" cy="280" rx="430" ry="360" fill="url(#warm-light)"/>
+    <ellipse cx="105" cy="792" rx="560" ry="570" fill="url(#cool-light)"/>
+    <rect x="1000" y="94" width="535" height="403" fill="url(#dots)"/>
+    <path d="M29 1h1542" stroke="url(#top-edge)" stroke-width="2"/>
+
+    <g class="wide-layout">
+      <use xlink:href="#paw" transform="translate(65 30) scale(.9)" color="#eeb69a" aria-hidden="true"/>
+      <text x="115" y="54" class="eyebrow" fill="#c7d6d5">FRANK / OPEN SOURCE</text>
+      <text x="1536" y="54" text-anchor="end" class="mono" font-size="20" fill="#92aaaF">github.com/frankischilling</text>
+      <path d="M64 87h1472" stroke="#8098a7" stroke-opacity=".18"/>
+
+      <!-- Profile and original Cupid illustration. -->
+      <circle cx="72" cy="149" r="5" fill="#9bd2c1"/>
+      <text x="93" y="156" class="eyebrow" fill="#a2cfc4">IT @ WENTWORTH / GNU/LINUX</text>
+      <text x="58" y="275" class="sans" font-size="126" font-weight="700" letter-spacing="-6" fill="#f5f0e5">frankischilling<tspan fill="#efb396">.</tspan></text>
+      <text x="64" y="348" class="sans" font-size="42" font-weight="500" letter-spacing="-.8" fill="#dce4df">Systems, emulators,</text>
+      <text x="64" y="402" class="sans" font-size="42" font-weight="500" letter-spacing="-.8" fill="#dce4df">and a little <tspan fill="#efb396">cat supervision.</tspan></text>
+      <text x="65" y="459" class="mono" font-size="23" fill="#9fb0bd">C / C++ / OCaml / Rust</text>
+
+      <g aria-hidden="true">
+        <circle cx="1283" cy="281" r="181" stroke="#d6aa8f" stroke-opacity=".2"/>
+        <circle cx="1283" cy="281" r="165" stroke="#d6aa8f" stroke-opacity=".09" stroke-dasharray="3 10"/>
+        <path d="M1081 178h-29v42m420 148h30v-41" stroke="#a7c2c3" stroke-opacity=".3" stroke-width="1.5"/>
+        <path d="M1480 139v20m-10-10h20M1058 333v14m-7-7h14" stroke="#e6c1a7" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="1442" cy="404" r="4" fill="#8cb8b2"/>
+        <circle cx="1098" cy="143" r="3" fill="#c9a18a"/>
+        <use xlink:href="#cupid" transform="translate(1054 60) scale(1.12)"/>
+      </g>
+      <text x="1288" y="499" text-anchor="middle" class="mono" font-size="21" letter-spacing="1" fill="#e2b49a">CUPID THE CAT</text>
+
+      <!-- The project names match the public repositories; links live in README.md. -->
+      <path d="M64 529h1472" stroke="#8098a7" stroke-opacity=".2"/>
+      <text x="64" y="569" class="eyebrow" fill="#e7af95">01</text>
+      <text x="113" y="569" class="eyebrow" fill="#dce5df">THE CUPID COLLECTION</text>
+      <text x="1536" y="569" text-anchor="end" class="mono" font-size="22" fill="#a5babf">@cupidthecat</text>
+
+      <g transform="translate(64 592)">
+        <rect width="724" height="154" rx="15" fill="#eab194" fill-opacity=".035" stroke="#574941"/>
+        <path d="M20 28v96" stroke="#e7af95" stroke-width="3" stroke-linecap="round"/>
+        <use xlink:href="#chip" x="40" y="24" color="#e7af95" aria-hidden="true"/>
+        <text x="91" y="48" class="eyebrow" fill="#d3b4a4">SYSTEMS</text>
+        <text x="689" y="47" text-anchor="end" class="mono" font-size="19" fill="#aebbbd">C / ASM</text>
+        <text x="40" y="95" class="project" fill="#f0e3d6">cupid-os</text>
+        <text x="40" y="129" class="detail" fill="#b4bec3">32-bit x86 operating system</text>
+      </g>
+
+      <g transform="translate(812 592)">
+        <rect width="724" height="154" rx="15" fill="#bab4e5" fill-opacity=".03" stroke="#494659"/>
+        <path d="M20 28v96" stroke="#bdb7e8" stroke-width="3" stroke-linecap="round"/>
+        <use xlink:href="#controller" x="40" y="24" color="#bdb7e8" aria-hidden="true"/>
+        <text x="92" y="48" class="eyebrow" fill="#c0bdd9">EMULATION</text>
+        <text x="689" y="47" text-anchor="end" class="mono" font-size="19" fill="#aebbbd">C / C++</text>
+        <text x="40" y="95" class="project" fill="#eee9fa">cupid-nes<tspan dx="13" fill="#9291a6">/</tspan><tspan dx="13">cupid-n64</tspan></text>
+        <text x="40" y="129" class="detail" fill="#b4bec3">NES, Famicom &amp; Nintendo 64</text>
+      </g>
+
+      <g transform="translate(64 766)">
+        <rect width="724" height="154" rx="15" fill="#8fcdbc" fill-opacity=".025" stroke="#354e4e"/>
+        <path d="M20 28v96" stroke="#9dd0bf" stroke-width="3" stroke-linecap="round"/>
+        <use xlink:href="#windows" x="40" y="24" color="#9dd0bf" aria-hidden="true"/>
+        <text x="91" y="48" class="eyebrow" fill="#a9cebf">DESKTOP &amp; TERMINAL</text>
+        <text x="689" y="47" text-anchor="end" class="mono" font-size="19" fill="#aebbbd">C</text>
+        <text x="40" y="95" class="project" fill="#e3eee6">cupidwm<tspan dx="13" fill="#8da6a0">/</tspan><tspan dx="13">cupidfm</tspan></text>
+        <text x="40" y="129" class="detail" fill="#b4bec3">X11 window manager &amp; terminal file manager</text>
+      </g>
+
+      <g transform="translate(812 766)">
+        <rect width="724" height="154" rx="15" fill="#9ec5e3" fill-opacity=".025" stroke="#3d4c5c"/>
+        <path d="M20 28v96" stroke="#a6c9e4" stroke-width="3" stroke-linecap="round"/>
+        <use xlink:href="#prompt" x="40" y="24" color="#a6c9e4" aria-hidden="true"/>
+        <text x="91" y="48" class="eyebrow" fill="#abc5d9">SHELL &amp; SYSTEM TOOLS</text>
+        <text x="689" y="47" text-anchor="end" class="mono" font-size="19" fill="#aebbbd">Rust / C</text>
+        <text x="40" y="95" class="project" fill="#e7edf4">cherubsh<tspan dx="13" fill="#91a7bb">/</tspan><tspan dx="13">cupidfetch</tspan></text>
+        <text x="40" y="129" class="detail" fill="#b4bec3">Bash-compatible shell &amp; system information</text>
+      </g>
+
+      <!-- Personal projects are kept distinct from the Cupid organization. -->
+      <text x="64" y="969" class="eyebrow" fill="#e7af95">02</text>
+      <text x="113" y="969" class="eyebrow" fill="#dce5df">ALSO ON MY WORKBENCH</text>
+      <text x="1536" y="969" text-anchor="end" class="mono" font-size="22" fill="#a5babf">@frankischilling</text>
+      <path d="M64 995h1472" stroke="#8098a7" stroke-opacity=".2"/>
+      <path d="M551 1017v56m504-56v56" stroke="#8098a7" stroke-opacity=".2"/>
+      <g class="mono" font-size="31" fill="#eae8e0">
+        <text x="65" y="1041">Axiom64</text>
+        <text x="589" y="1041">holyc-ocaml</text>
+        <text x="1093" y="1041">robotron64</text>
+      </g>
+      <g class="detail" fill="#a9b9c2">
+        <text x="65" y="1075">64-bit operating system</text>
+        <text x="589" y="1075">HolyC compiler in OCaml</text>
+        <text x="1093" y="1075">Robotron 64 decompilation</text>
+      </g>
+      <path d="M64 1104h1472" stroke="#8098a7" stroke-opacity=".14"/>
+      <use xlink:href="#heart" transform="translate(65 1121) scale(.68)" color="#dfa68f" aria-hidden="true"/>
+      <text x="101" y="1137" class="mono" font-size="18" letter-spacing="1" fill="#9fb1b8">MADE BY FRANK. SUPERVISED BY CUPID.</text>
+      <text x="1536" y="1137" text-anchor="end" class="mono" font-size="18" fill="#9fb1b8">Always something to figure out.</text>
+    </g>
+
+    <!-- Same identities and projects, with larger type for a narrow README image. -->
     <g class="compact-layout">
-      <path d="M68 73h26" stroke="#d3f991" stroke-width="5"/>
-      <text x="116" y="87" class="mono" font-size="44" letter-spacing="2" fill="#c2cfbf">IT @ WENTWORTH</text>
-      <text x="62" y="245" class="sans" font-size="190" textLength="1464" lengthAdjust="spacingAndGlyphs" font-weight="700" letter-spacing="-5.8" fill="#f0f3e9">frankischilling<tspan fill="#d3f991">.</tspan></text>
-      <text x="68" y="327" class="sans" font-size="44" fill="#aabbb3">GNU/Linux<tspan fill="#91a99d"> / </tspan>Emulators<tspan fill="#91a99d"> / </tspan>PHP / Python / C / C++</text>
+      <use xlink:href="#paw" transform="translate(66 57) scale(1.4)" color="#eeb69a" aria-hidden="true"/>
+      <text x="139" y="93" class="mono" font-size="46" fill="#c8d9d5">@frankischilling</text>
+      <text x="62" y="248" class="sans" font-size="112" font-weight="700" letter-spacing="-4" fill="#f5f0e5">Code by Frank.</text>
+      <text x="64" y="369" class="sans" font-size="100" font-weight="600" letter-spacing="-3" fill="#efb396">Cupid supervises.</text>
+      <use xlink:href="#cupid" transform="translate(1097 59) scale(1.02)" aria-hidden="true"/>
+      <text x="65" y="448" class="sans" font-size="43" fill="#b7c8ce">Systems · emulation · compilers · terminal tools</text>
+      <path d="M64 485h1472" stroke="#708995" stroke-opacity=".35" stroke-width="2"/>
+      <text x="65" y="550" class="mono" font-size="45" fill="#d9e4dd">The Cupid collection</text>
+      <text x="1535" y="550" text-anchor="end" class="mono" font-size="40" fill="#a6cbbf">@cupidthecat</text>
 
-      <g class="mono" font-size="40">
-        <g transform="translate(68 376)">
-          <rect width="300" height="78" rx="12" fill="#a8ce6f" fill-opacity=".075" stroke="#a9c97d" stroke-opacity=".45" stroke-width="2"/>
-          <text x="24" y="52" fill="#d9e6c7">Arch Linux</text>
-        </g>
-
-        <g transform="translate(392 376)">
-          <rect width="275" height="78" rx="12" fill="#a0c4bb" fill-opacity=".035" stroke="#496458" stroke-width="2"/>
-          <text x="24" y="52" fill="#c0d0c8">Lua + XUI</text>
-        </g>
-
-        <g transform="translate(691 376)">
-          <rect width="492" height="78" rx="12" fill="#a0c4bb" fill-opacity=".035" stroke="#496458" stroke-width="2"/>
-          <text x="24" y="52" fill="#c0d0c8">C/C++ (VS2008/XDK)</text>
-        </g>
-
-        <g transform="translate(1207 376)">
-          <rect width="325" height="78" rx="12" fill="#a0c4bb" fill-opacity=".035" stroke="#496458" stroke-width="2"/>
-          <text x="24" y="52" fill="#c0d0c8">PHP + MySQL</text>
-        </g>
+      <rect x="64" y="584" width="722" height="190" rx="18" fill="#eab194" fill-opacity=".035" stroke="#665247" stroke-width="2"/>
+      <rect x="812" y="584" width="724" height="190" rx="18" fill="#bab4e5" fill-opacity=".03" stroke="#59516c" stroke-width="2"/>
+      <rect x="64" y="795" width="722" height="190" rx="18" fill="#8fcdbc" fill-opacity=".03" stroke="#436461" stroke-width="2"/>
+      <rect x="812" y="795" width="724" height="190" rx="18" fill="#9ec5e3" fill-opacity=".03" stroke="#455d70" stroke-width="2"/>
+      <g class="mono" font-size="34" letter-spacing="1">
+        <text x="97" y="637" fill="#dbb59e">SYSTEMS</text>
+        <text x="845" y="637" fill="#c6bdeb">EMULATION</text>
+        <text x="97" y="848" fill="#b0d5c4">DESKTOP &amp; TERMINAL</text>
+        <text x="845" y="848" fill="#afcee5">SHELL &amp; SYSTEM TOOLS</text>
+      </g>
+      <g class="mono" font-size="57" fill="#f0e9de" letter-spacing="-1">
+        <text x="97" y="715">cupid-os</text>
+        <text x="845" y="692">cupid-nes</text>
+        <text x="845" y="750">cupid-n64</text>
+        <text x="97" y="903">cupidwm</text>
+        <text x="97" y="961">cupidfm</text>
+        <text x="845" y="903">cherubsh</text>
+        <text x="845" y="961">cupidfetch</text>
+      </g>
+      <text x="97" y="757" class="sans" font-size="35" fill="#bcc8cb">32-bit x86 operating system</text>
+      <text x="65" y="1048" class="mono" font-size="36" letter-spacing="1" fill="#aabfc4">ALSO ON MY WORKBENCH</text>
+      <g class="mono" font-size="48" fill="#e7e9e1" letter-spacing="-1">
+        <text x="65" y="1120">Axiom64</text>
+        <text x="535" y="1120">holyc-ocaml</text>
+        <text x="1100" y="1120">robotron64</text>
       </g>
     </g>
   </g>
-
-  <rect x=".75" y=".75" width="1598.5" height="498.5" rx="24" stroke="#71947d" stroke-opacity=".28" stroke-width="1.5"/>
+  <rect x="1" y="1" width="1598" height="1158" rx="28" stroke="#718a99" stroke-opacity=".3" stroke-width="2"/>
 </svg>
